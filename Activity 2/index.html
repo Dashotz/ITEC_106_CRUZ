@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <div class="game">
+
+    <input type="text" class="screen" id="output" readonly>
+    
+    <div class="choices">
+        <div class="choice">
+            <span>Player</span>
+            <img src="rock.png" alt="User choice" id="user-choice-img">
+        </div>
+        
+        <div class="choice">
+            <span>Computer</span>
+            <img src="rock.png" alt="Computer choice" id="computer-choice-img">
+        </div>
+    </div>
+    
+    <div class="buttons-row">
+        <button class="button orange rock" onclick="play('rock')">
+            <img src="rock.png" alt="Rock" class="image">
+        </button>
+        <button class="button gray paper" onclick="play('paper')">
+            <img src="paper.png" alt="Paper" class="image">
+        </button>
+        <button class="button gray scissors" onclick="play('scissors')">
+            <img src="scissors.png" alt="Scissors" class="image">
+        </button>
+    </div>
+   
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Number Guessing Game</title>
+<link rel="stylesheet" href="design.css">
+</head>
+<body>
+<div class="container">
+  <h1>Number Guessing Game</h1>
+  <br>
+  <h3>Guess a number between 1 and 10</h3>
+  <input type="text" id="guessInput" placeholder="0" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+  <br>
+  <button onclick="checkGuess()">Guess</button>
+  <button onclick="playAgain()">Play Again</button> <!-- Added Play Again button -->
+  <p id="message"></p>
+  <br>
+  <p id="tries">Tries: <span id="triesCount">0</span></p>
+  <br>
+  <ul id="guesslist"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

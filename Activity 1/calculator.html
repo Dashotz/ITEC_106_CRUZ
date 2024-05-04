@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="screen" id="output" readonly>
+        
+        <div class="buttons-row">
+            <button class="button orange plus" onclick="getval('+')">+</button>
+            <button class="button gray" onclick="getval('7')">7</button>
+            <button class="button gray" onclick="getval('8')">8</button>
+            <button class="button gray" onclick="getval('9')">9</button>
+        </div>
+        
+        <div class="buttons-row">
+            <button class="button orange minus" onclick="getval('-')">-</button>
+            <button class="button gray" onclick="getval('4')">4</button>
+            <button class="button gray" onclick="getval('5')">5</button>
+            <button class="button gray" onclick="getval('6')">6</button>
+        </div>
+        
+        <div class="buttons-row">
+            <button class="button orange multiply" onclick="getval('*')">x</button>
+            <button class="button gray" onclick="getval('1')">1</button>
+            <button class="button gray" onclick="getval('2')">2</button>
+            <button class="button gray" onclick="getval('3')">3</button>
+        </div>
+
+        <div class="buttons-row">
+            <button class="button orange divide" onclick="getval('/')">÷</button>
+            <button class="button gray double" onclick="getval('0')">0</button>
+            <button class="button gray" onclick="getval('.')">.</button>
+            <button class="button gray equal" onclick="calculate()">=</button>
+        </div>
+
+        <div class="buttons-row">
+            <button class="button orange clear" onclick="clearoutput()">C</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

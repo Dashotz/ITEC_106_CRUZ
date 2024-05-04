@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game {
+  background-color: #000;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.screen {
+  text-align: center;
+  font-size: 24px;  
+  padding: 10px;
+  margin-right: -10px;
+  background-color: #222;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  color: orange;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 20px;
+  padding-right: 10%;
+}
+
+.button {
+  width: 70px;
+  height: 70px;
+  padding: 0; /* remove padding */
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #222;
+  border-radius: 50%;
+}
+
+.button:hover {
+  background-color: orange;
+}
+
+.button.orange {
+  background-color: orange;
+}
+
+.button.gray.double {
+  width: calc(70 - 10px);
+}
+
+.button.operator {
+  width: 70px;
+}
+
+.button.equal {
+  width: calc(30%px - 10px);
+}
+
+.image {
+  width: 65%; 
+  height: 65%; 
+  border-radius: 20%; 
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice img {
+  max-width: 50px; 
+  max-height: 50px;
+  margin-left: -200%; 
+}
+
+.choice span{
+  color: aliceblue;
+  margin-left: -210%; 
+}
+
+
